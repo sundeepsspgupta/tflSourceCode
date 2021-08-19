@@ -1,9 +1,26 @@
-1. This application has bene built in .NET Core 5.0 , C# as backend laguage and I have used dependency injection.
+Instructions:
+
+- How to build the code : Download/Clone the code from below git repository and open the solution in Visual studio 2019.
+
+- How to run the output : Build the solution in VS studio 2019. Project can be executed through powershell.
+ 
+- User should go to this location in the project : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>
+
+- For executing it through powershell, go to this location in the project : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde> and provide the     input parameters. (Example - Input parameters would A21, A2, A3 (any Invalid Road types)
+
+- How to run any tests that you have written : The test cases can be run through VS studio 2019. Go to RoadStatus.UnitTest project and open TFLServiceTest.cs class.
+  Then test can be run through method or test explorer window.
+
+- Any assumptions that you’ve made : It is expected that it takes only one input as RoadType. It is assumed that response from API is only one. If multiple response      is there , then it will display a user freindly message.
+
+- Anything else you think is relevant 
+
+
+1. This application has developed in .NET Core 5.0 , C# as backend language. A decoupled architect is used with dependency injection as design pattern.
 
 2. Primary and secondry keys are configured in appsetting.json file which is available on the root of the project RoadStatus\appsetting.json.
 
 3. Rodstatus is the main console application which is a startup project.
-
 4. Once Console application gets started, it takes "RoadCode" parameter as a single input.
 
 5. Only one RoadCode is valid, otherwise it will return exit code and provide a freindly message as "More than one parameters in RoadCode".
@@ -20,19 +37,3 @@
 
 11. This project can be executed via console. Inputs are road code.
 
-Instructions:
-
-- How to build the code : Download/Cllone the code from below git repository and open the solution in Visual studio 2019.
-
-- How to run the output : Build the solution in VS studio 2019. Project can be executed through powershell.
- 
-- User should go to this location in the project : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>
-
-- For executing it through powershell, go to this location in the project : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde> and provide the     input parameters. (Example - Input parameters would A21, A2, A3 (any Invalid Road types)
-
-- How to run any tests that you have written : The test cases can be run through VS studio 2019. Go to RoadStatus.UnitTest project and open TFLServiceTest.cs class.
-  Then test can be run through method or test explorer window.
-
-- Any assumptions that you’ve made : It is expected that it takes only one input as RoadType. It is assumed that response from API is only one. If multiple response      is there , then it will display a user freindly message.
-
-- Anything else you think is relevant 
