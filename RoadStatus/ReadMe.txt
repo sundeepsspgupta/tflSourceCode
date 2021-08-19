@@ -1,19 +1,51 @@
-Instructions:
+ Instructions:
 
-- How to build the code : Download/Clone the code from below git repository and open the solution in Visual studio 2019. (https://github.com/sundeepsspgupta/tflSourceCode).
+1. How to build the code : 
 
-- How to run the output : Build the solution in VS studio 2019. Project can be executed through powershell or command prompt.
+       - Steps 1. (To build using Visual Studio.)
+
+                 1. Download/Clone the code from below git repository(https://github.com/sundeepsspgupta/tflSourceCode).
+                 2. Open the solution in Visual studio 2019.
+
+       - Alternative Steps to execute the build using command prompt:
+
+                 1. Go to Window -> Run
+                 2. Type CMD
+                 3. Type below command
+                        cd C:\Program Files\dotnet
+                 4. Type below command
+                        dotnet.exe build <ProjectLocation>\RoadStatus\TFL.RoadStatus.sln
+
+       - I have removed my own primary and secondary keys. User will have to add his own keys Primary and secondary as named in below files.
+
+          - Add your own keys start up project in "\RoadStatus\RoadStatus\appsettings.json & "\RoadStatus\RoadStatus.UnitTest\appsettings". 
+
+2. How to run the output : 
+
+       -  Build the solution in VS studio 2019. Project can be executed through powershell or command prompt.
  
-- User should go to this location in the project using powershell or command window : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>
+       - User should go to this location in the project using powershell or command window : \RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>
 
-- For executing it through powershell, go to this location in the project : "\RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>" and provide the input parameters. (Example - Input parameters would A21, A2, A3 (any Invalid Road types)
+       - For executing it through powershell, go to this location in the project : "\RoadStatus\RoadStatus\bin\Debug\net5.0\RoadStatus.exe <Enter RoadCde>" and provide the input          parameters. (Example - Input parameters would A21, A2, A3 (any Invalid Road types)
 
-- How to run any tests that you have written : The test cases can be run through VS studio 2019. Go to RoadStatus.UnitTest project and open TFLServiceTest.cs class.
-  Then test can be run through method or test explorer window.
+3. How to run any tests that you have written : 
 
-- Any assumptions that you’ve made : It is expected that it takes only one input as RoadType. It is assumed that response from API is only one. If multiple response is there ,   then it will display a user freindly message.
+       - The test cases can be run through VS studio 2019. Go to RoadStatus.UnitTest project and open TFLServiceTest.cs class.
+         Then test can be run through method or test explorer window. Please try below steps for test execution on CMD.
 
-- Anything else you think is relevant : NA
+       - Steps to execute Test case using command prompt: 
+                 1. Go to Window -> Run
+                 2. Type CMD
+                 3. Type below command
+                        cd C:\Program Files\dotnet
+                 4. Type below command
+                        dotnet.exe test <ProjectLocation>\RoadStatus\RoadStatus.UnitTest
+
+4.  Any assumptions that you’ve made : 
+
+        - It is expected that it takes only one input as RoadType. It is assumed that response from API is only one. If multiple response is there ,   then it will display a   user freindly message.
+
+5.  Anything else you think is relevant : NA
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Application Details:
